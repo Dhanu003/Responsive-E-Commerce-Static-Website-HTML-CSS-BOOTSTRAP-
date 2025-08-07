@@ -1,0 +1,594 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar top*/
+.navbar-top {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 28px;
+  
+
+}
+.social-link i img {
+    margin-left: 10px;
+  
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+
+.icon i {
+    font-size: 28px;
+    /* Increase size */
+    margin-right: 10px;
+    /* Add spacing */
+}
+.container {
+    padding: 10px;
+    height: 75px;
+}
+.logo h3 {
+    font-weight: bold;
+    color: #ff1493;
+
+}
+@media screen and (max-width:420px) {
+    .social-link i img {
+        width: 20px;
+    }
+}
+
+
+
+@media screen and (max-width:420px) {
+    .logo h3 {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width:420px) {
+    .icon i img {
+        width: 20px;
+
+    }
+}
+/* navbar top ends*/
+/*=============================================================*/
+ /*nav-tab link start*/
+ /*main content*/
+ .main-content {
+     width: 100%;
+     height: 90vh;
+     background-image: url(./images/final\ background\ image.png!bw700);
+     background-size: cover;
+     background-position: 70%;
+ }
+
+ /* navbar*/
+ #navbar-color {
+     background-color: #F5E1DA;
+    height:70px;
+    
+ }
+ .navbar-toggler img {
+     width: 20px;
+     /* Adjust width */
+     height: 20px;
+     /* Adjust height */
+    margin-bottom: 5px;
+        /* Moves it up */
+     
+ }
+
+ .navbar-nav{
+     margin: auto;          /*/ this will keep icons in center align*/
+ }
+ 
+
+ .nav-link {
+     margin-left: 30px;
+     font-weight: bold;
+     color: black;
+     transition: 0.5s ease;
+     cursor: pointer;
+ }
+
+ .nav-link:hover {
+     color: #ffc0cb;
+ }
+@media screen and (max-width: 768px) {
+    .navbar-collapse {
+        width: 100%;
+        /*  It takes full width */
+        background-color: #F5E1DA;
+       
+        text-align: left;
+        /* Center align text */
+    }
+
+    .nav-tab {
+        flex-direction: column;
+        /* Stack menu items */
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav-tab .nav-item {
+        width: 100%;
+        padding: 10px 0;
+        /* Add space between items */
+    }
+}
+ /* navbar*/
+/*----------------------------------------------------*/
+/*  content */
+.content {
+    margin-top: 150px;
+    margin-left: 60px;
+}
+
+.content h1 {
+    font-size: 50px;
+}
+
+.head_color {
+    color: #ff1493;
+}
+
+#btn1 button {
+    width: 150px;
+    height: 32px;
+    background: #b30059;
+    border: 1px solid #cc0066;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+#btn1 button:hover {
+    background-color: #ffc0cb;
+}
+
+@media screen and (max-width:420px) {
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .text-center {
+        font-size: 30px;
+    }
+}
+
+/*  content */
+/*main content*/
+
+/*===================================================================================*/
+/* about us start*/
+#btn2 button {
+    width: 150px;
+    height: 32px;
+    background: #b30059;
+    border: 1px solid #cc0066;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+#btn2 button:hover {
+    background-color: #ffc0cb;
+}
+
+.text-center {
+    text-align: center;
+    font-size: 64px;
+    color: black;
+    padding: 16px;
+    margin: 32px 0;
+    background: rgba(255, 51, 153, 0.05);
+}
+
+.text-center span {
+    color: #ff1493;
+}
+
+.container .row {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    padding: 32px 0;
+    padding-bottom: 48px;
+    justify-content: space-between;
+}
+
+.container .row .video-container {
+    flex: 1 1 640px;
+    position: relative;
+
+}
+
+.container .row .video-container video {
+    width: 100%;
+    border: 24px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .row .video-container h3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    background: #fff;
+    color: #333;
+    width: 100%;
+    padding: 16px 32px;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+
+.col-md-6 {
+    flex: 1 1 640px;
+    /* Allows flexibility */
+}
+
+.container .row .col-md-6 p {
+    padding: 0.5rem 0;
+    padding-top: 16px;
+    line-height: 1.5em;
+}
+
+#btn2 button:hover {
+    background-color: #ffc0cb;
+}
+
+@media screen and (min-width: 768px) {
+    .container .row {
+        flex-wrap: nowrap;
+
+    }
+}
+
+/* about us ends */
+/*===========================================================================*/
+/* card1 starts */
+#c p {
+    font-weight: bold;
+}
+
+#btn3 {
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+    font-size: 64px;
+    color: black;
+    padding: 16px;
+    margin: 32px 0;
+    background: rgba(255, 51, 153, 0.05);
+}
+
+#btn3 button {
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#btn3 button:hover {
+    background-color: #ffc0cb;
+}
+
+.container .row {
+    justify-content: center;
+    /* Center the items */
+}
+
+.col-md-3 {
+    height: auto;
+    /* Allow the column to expand */
+}
+
+.container {
+    padding: 15px;
+    /* Adds space around the entire section */
+}
+
+.row {
+    justify-content: center;
+    /* Centers the items */
+}
+
+.col-md-3 {
+    padding: 20px;
+    /* Adds space around each card */
+
+}
+
+.card {
+    border: none;
+    /* Optional: Remove border for cleaner look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a subtle shadow */
+    height: 100%;
+    /* Ensures the card expands fully */
+}
+
+.card img {
+    width: 100%;
+    /* Ensures the image takes full card width */
+    height: 350px;
+    /* Maintains aspect ratio */
+    object-fit: contain;
+    /* Ensures the full image is visible without cropping */
+    padding: 0;
+    /* Adds space inside the image */
+}
+
+.card-body h3 {
+    font-size: 25px;
+    /* Smaller title size*/
+    font-weight: bold;
+}
+
+.card-body p {
+    font-size: 20px;
+    /* Reduce paragraph text size */
+    color: #555;
+    /* Optional: Slightly dim color for better readability */
+}
+
+@media screen and (max-width:890px) {
+    #btn3 button {
+        width: 100px;
+
+    }
+    
+}
+.text-center {}
+
+.container .row {
+    display: flex;
+    flex-wrap: wrap;
+    /* Ensures items wrap properly */
+    justify-content: center;
+    /* Keeps cards centered */
+}
+.container .row {
+    display: flex;
+    flex-wrap: wrap; /* Ensures wrapping when needed */
+    justify-content: center; /* Centers cards */
+    gap: 20px; /* Adds spacing between cards */
+}
+
+.col-md-3 {
+    flex: 1 1 23%;
+    /* Ensures 4 per row on large screens */
+    max-width: 23%;
+    box-sizing: border-box;
+}
+
+/* Adjust for medium screens (3 items per row) */
+@media screen and (max-width: 992px) {
+    .col-md-3 {
+        flex: 1 1 30%;
+        /* 3 items per row */
+        max-width: 30%;
+    }
+}
+
+/* Adjust for tablets (2 items per row) */
+@media screen and (max-width: 768px) {
+    .col-md-3 {
+        flex: 1 1 45%;
+        /* 2 items per row */
+        max-width: 45%;
+    }
+}
+
+/* Adjust for mobile screens (1 item per row) */
+@media screen and (max-width: 576px) {
+    .col-md-3 {
+        flex: 1 1 90%;
+        /* 1 item per row */
+        max-width: 90%;
+    }
+}
+
+/*card1 end */
+/*============================================================*/
+/* Customer Reviews Section */
+body {
+    background-color: #f8f9fa;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+}
+
+/* Review Section */
+#review {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: -50px;
+        /* Adjust this value to move it down */
+}
+
+/* Review Stars */
+.stars i {
+    color: #ffcc00;
+    font-size: 18px;
+    margin-right: 3px;
+}
+
+/* Review Paragraph */
+p {
+    font-size: 16px;
+    color: #555;
+    font-style: italic;
+}
+
+/* User Info */
+.user {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* Enlarged & Styled User Image */
+.user img {
+    width: 80px;
+    /* Increased Size */
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #d63384;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.user img:hover {
+    transform: scale(1.1);
+    /* Slight Zoom on Hover */
+}
+
+/* User Details */
+.user-info {
+    margin-left: 15px;
+}
+
+.user-info h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.user-info span {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Review Cards */
+.row {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.row:hover {
+    transform: translateY(-5px);
+    /* Subtle Lift on Hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .user img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .user-info h3 {
+        font-size: 16px;
+    }
+}
+/*------REVIEW END-----*/
+/*==============================================================*/
+ footer {
+    background-color:#ffc0cb;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+footer{
+    z-index: 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section a img {
+    width: 30px;
+    margin: 5px;
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    font-size: 14px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+}
+footer {
+    position: relative;
+    width: 100%;
+  
+}
+footer {
+    margin-top: 600px;
+    /* Adjust as needed */
+}
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        /* Stack items in a column on small screens */
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    footer {
+        padding-bottom: 20px;
+        /* Extra space to avoid overlap */
+    }
+}
+.container {
+    flex: 1;
+    /* Pushes the footer down */
+    margin-bottom: 0 !important;
+}
+
+/* Ensure the entire page takes full height */
+/* Reset default margins and padding */

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flower Shop</title>
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* Ensures the page takes full height */
+        margin: 0;
+      }
+
+      .container {
+        flex: 1; /* Pushes the footer down */
+        margin-bottom: 0 !important;
+      }
+
+      footer {
+        background-color: #f5e1da;
+        text-align: center;
+        padding: 20px;
+        margin-top: auto; /* Pushes it to the bottom */
+        position: relative; /* Ensures it stays below content */
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!--navbar top start-->
+    <div class="container">
+      <div class="navbar-top">
+        <div class="social-link">
+          <a href="https://www.facebook.com" target="_blank"
+            ><i class="bi bi-facebook fs-2 me-3"></i
+          ></a>
+          <a href="https://www.twitter.com" target="_blank"
+            ><i class="bi bi-twitter fs-2 me-3"></i
+          ></a>
+          <a href="https://www.instagram.com" target="_blank"
+            ><i class="bi bi-instagram fs-2"></i
+          ></a>
+        </div>
+
+        <div class="logo">
+          <h3>Flower Whisper</h3>
+        </div>
+
+        <div class="icon">
+          <a href="search.html"><i class="bi bi-search"></i></a>
+          <a href="wishlist.html"><i class="bi bi-suit-heart-fill"></i></a>
+          <a href="cart.html"><i class="bi bi-cart4"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!--navbar top ends-->
+
+    <!--nav-tab link start-->
+    <!--main content start-->
+    <div class="main-content">
+      <nav class="navbar navbar-expand-md" id="navbar-color">
+        <div class="container">
+          <!-- Toggler/collapsibe Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+          >
+            <span
+              ><i><img src="./images/menu.png" alt="" width="30px" /></i
+            ></span>
+          </button>
+
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="register.html">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reviews.html">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--background content starts-->
+      <div class="content">
+        <h1>Bringing Nature’s Elegance to You</h1>
+        <h3 class="head_color">Pure Beauty, Freshly Picked</h3>
+        <p>
+          "Experience the beauty of nature with our handpicked, fresh flowers.
+          Each bloom is carefully selected to bring <br />
+          joy, warmth, and elegance to your special moments. Brighten your day
+          with nature’s finest creations!"
+        </p>
+        <div id="btn1">
+          <a href="shop.html"> <button>Shop Now</button></a>
+        </div>
+      </div>
+    </div>
+
+    <!--background content ends-->
+    <!--nav-tab link ends-->
+    <!--main content ends -->
+
+    <!--About section start-->
+
+    <div class="container">
+      <h1 class="text-center" style="margin-top: 50px">
+        <span>ABOUT</span> US
+      </h1>
+      <div class="row" style="margin-top: 50px">
+        <div class="col-md-6 py-3 py-md-0">
+          <div class="video-container">
+            <video src="./images/about_us.mp4" loop autoplay muted></video>
+            <h3>Best Florists Near You</h3>
+          </div>
+        </div>
+
+        <div class="col-md-6 py-3 py-md-0">
+          <h3>Why Choose Us?</h3>
+          <p>
+            At Flower Whisper, we bring you the freshest, most vibrant flowers
+            for every occasion. Whether you need a beautiful bouquet for a loved
+            one or elegant floral arrangements for events, we ensure top-quality
+            blooms with fast and reliable delivery. Our flowers are handpicked
+            daily, guaranteeing long-lasting freshness and stunning beauty. With
+            affordable prices, personalized customer service, and a passion for
+            creating joy through flowers, we make every purchase special. Choose
+            us for quality, reliability, and the perfect floral touch for any
+            moment!
+          </p>
+          <div id="btn2"><button>Read More....</button></div>
+        </div>
+      </div>
+    </div>
+    <!--About section ends-->
+
+    <!--footer section starts-->
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section about">
+          <h2>About Us</h2>
+          <p>Your one-stop shop for fresh flowers and beautiful bouquets.</p>
+        </div>
+        <div class="footer-section links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section contact">
+          <h2>Contact Us</h2>
+          <p>Email: support@flowershop.com</p>
+          <p>Phone: +91 12345 67890</p>
+        </div>
+        <div class="footer-section social">
+          <h2>Follow Us</h2>
+          <p>
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="bi bi-facebook fs-2 me-3"></i
+            ></a>
+          </p>
+          <p>
+            <a href="https://www.twitter.com" target="_blank"
+              ><i class="bi bi-twitter fs-2 me-3"></i
+            ></a>
+          </p>
+          <p>
+            <a href="https://www.instagram.com" target="_blank"
+              ><i class="bi bi-instagram fs-2"></i
+            ></a>
+          </p>
+        </div>
+      </div>
+      <p class="footer-bottom">© 2025 Flower Shop. All Rights Reserved.</p>
+    </footer>
+    <!--footer section ends-->
+  </body>
+</html>

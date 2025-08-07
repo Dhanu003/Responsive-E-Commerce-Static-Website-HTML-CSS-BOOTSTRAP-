@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <style>
+      /* Table Styling */
+      table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 10px; /* Space between rows and columns */
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      th {
+        text-align: left;
+        padding: 10px;
+        font-size: 18px;
+        color: #333;
+      }
+
+      td {
+        padding: 10px;
+      }
+
+      /* Input Styling */
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        outline: none;
+      }
+
+      input:focus,
+      textarea:focus {
+        border-color: #ff1493;
+        box-shadow: 0 0 5px rgba(255, 20, 147, 0.5);
+      }
+
+      /* Button */
+      .btn-submit {
+        background: #b30059;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s ease;
+      }
+
+      .btn-submit:hover {
+        background: #ff1493;
+      }
+
+      /* Image Styling */
+      .image img {
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Responsive Design */
+      @media screen and (max-width: 768px) {
+        table {
+          border-spacing: 5px; /* Reduce spacing on smaller screens */
+        }
+        th,
+        td {
+          font-size: 16px;
+        }
+      }
+      .navbar {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000; /* Keeps navbar on top of other elements */
+      }
+      .navbar {
+        background-color: #f5e1da !important;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* Ensures the page takes full height */
+        margin: 0;
+      }
+
+      .container {
+        flex: 1; /* Pushes the footer down */
+      }
+
+      footer {
+        background-color: #f5e1da;
+        text-align: center;
+        padding: 20px;
+        margin-top: auto; /* Pushes it to the bottom */
+        position: relative; /* Ensures it stays below content */
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!--navbar starts-->
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <!-- Toggler/collapsibe Button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shop.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register.html">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reviews.html">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--navbar ends-->
+    <div class="container">
+      <h1 class="text-center" style="margin-top: 50px">
+        <span style="color: #ff1493">CONTACT</span> US
+      </h1>
+      <div class="row" style="margin-top: 50px">
+        <!-- Left Column for Form -->
+        <div class="col-md-6 py-3 py-md-0">
+          <form action="#">
+            <table>
+              <tbody>
+                <tr>
+                  <th scope="row">Full-Name:</th>
+                  <td>
+                    <input
+                      type="text"
+                      name="customer-name"
+                      placeholder="Enter Full-Name"
+                      required
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Email:</th>
+                  <td>
+                    <input
+                      type="email"
+                      name="customer-email"
+                      placeholder="Enter Email"
+                      required
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Message:</th>
+                  <td>
+                    <textarea
+                      name="comments"
+                      cols="30"
+                      rows="4"
+                      placeholder="Enter your message"
+                    ></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="text-align: center; padding-top: 10px">
+                    <button type="submit" class="btn-submit">Submit</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+        </div>
+
+        <!-- Right Column for Image -->
+        <div class="col-md-6 py-3 py-md-0">
+          <div class="image">
+            <img
+              src="./images/contact_image.png"
+              alt="Contact Image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--footer starts-->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section about">
+          <h2>About Us</h2>
+          <p>Your one-stop shop for fresh flowers and beautiful bouquets.</p>
+        </div>
+        <div class="footer-section links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section contact">
+          <h2>Contact Us</h2>
+          <p>Email: support@flowershop.com</p>
+          <p>Phone: +91 12345 67890</p>
+        </div>
+        <div class="footer-section social">
+          <h2>Follow Us</h2>
+          <p>
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="bi bi-facebook fs-2 me-3"></i
+            ></a>
+          </p>
+          <p>
+            <a href="https://www.twitter.com" target="_blank"
+              ><i class="bi bi-twitter fs-2 me-3"></i
+            ></a>
+          </p>
+          <p>
+            <a href="https://www.instagram.com" target="_blank"
+              ><i class="bi bi-instagram fs-2"></i
+            ></a>
+          </p>
+        </div>
+      </div>
+      <p class="footer-bottom">© 2025 Flower Shop. All Rights Reserved.</p>
+    </footer>
+    <!--footer section ends-->
+  </body>
+</html>
